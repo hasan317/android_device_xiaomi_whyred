@@ -7,15 +7,15 @@
 // fstab
 prebuilt_etc {
     name: "fstab.qcom",
-    src: "etc/fstab.qcom",
-    vendor: true,
+    src: "fstab.qcom",
+    soc_specific: true,
     ramdisk_available: true,
 }
 
 // Init configuration files
 prebuilt_etc {
     name: "init.device.rc",
-    src: "etc/init.device.rc",
+    src: "init.device.rc",
     sub_dir: "init/hw",
-    vendor: true,
+    soc_specific: true,
 }
